@@ -14,6 +14,9 @@ pids
 # Output of 'npm pack'
 *.tgz
 
+# Dependency directories
+node_modules/
+
 # dotenv environment variables file
 .env
 
