@@ -1,0 +1,112 @@
+{
+  "amber": {
+    "name": "Amber",
+    "element": "Pyro",
+    "weaponType": "Bow"
+  },
+  "barbara": {
+    "name": "Barbara",
+    "element": "Hydro",
+    "weaponType": "Catalyst"
+  },
+  "sucrose": {
+    "name": "Sucrose",
+    "element": "Anemo",
+    "weaponType": "Catalyst"
+  },
+  "klee": {
+    "name": "Klee",
+    "element": "Pyro",
+    "weaponType": "Catalyst"   
+  },
+  "ningguang": {
+    "name": "Ningguang",
+    "element": "Geo",
+    "weaponType": "Catalyst"
+  },
+  "qiqi": {
+    "name": "Qiqi",
+    "element": "Cryo",
+    "weaponType": "Catalyst"
+  },
+  "keqing": {
+    "name": "Keqing",
+    "element": "Electro",
+    "weaponType": "Sword"
+  },
+  "xiao": {
+    "name": "Xiao",
+    "element": "Anemo",
+    "weaponType": "Polearm"
+  },
+  "noelle": {
+    "name": "Noelle",
+    "element": "Geo",
+    "weaponType": "Claymore"
+  },
+  "bennett": {
+    "name": "Bennett",
+    "element": "Pyro",
+    "weaponType": "Sword"
+  },
+  "diluc": {
+    "name": "Diluc",
+    "element": "Pyro",
+    "weaponType": "Claymore"
+  },
+  "jean": {
+    "name": "Jean",
+    "element": "Anemo",
+    "weaponType": "Sword"
+  },
+  "mona": {
+    "name": "Mona",
+    "element": "Hydro",
+    "weaponType": "Catalyst"
+  },
+  "razor": {
+    "name": "Razor",
+    "element": "Electro",
+    "weaponType": "Claymore"
+  },
+  "xiangling": {
+    "name": "Xiangling",
+    "element": "Pyro",
+    "weaponType": "Polearm"
+  },
+  "chongyun": {
+    "name": "Chongyun",
+    "element": "Cryo",
+    "weaponType": "Claymore"
+  },
+  "lisa": {
+    "name": "Lisa",
+    "element": "Electro",
+    "weaponType": "Catalyst"
+  },
+  "kaeya": {
+    "name": "Kaeya",
+    "element": "Cryo",
+    "weaponType": "Sword"
+  },
+  "fischl": {
+    "name": "Fischl",
+    "element": "Electro",
+    "weaponType": "Bow"
+  },
+  "venti": {
+    "name": "Venti",
+    "element": "Anemo",
+    "weaponType": "Bow"
+  },
+  "beidou": {
+    "name": "Beidou",
+    "element": "Electro",
+    "weaponType": "Claymore"
+  },
+  "xingqiu": {
+    "name": "Xingqiu",
+    "element": "Hydro",
+    "weaponType": "Sword"
+  }
+}

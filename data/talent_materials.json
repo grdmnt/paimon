@@ -1,0 +1,38 @@
+{
+  "freedom": {
+  "name": "Freedom",
+  "schedule": ["Monday", "Thursday"],
+  "location": "Forsaken Rift (Monstadt)",
+  "characters": ["Amber", "Sucrose", "Barbara", "Klee"]
+  },
+  "prosperity": {
+    "name": "Prosperity",
+    "schedule": ["Monday", "Thursday"],
+    "location": "Taishan Mansion (Liyue)",
+    "characters": ["Ningguang", "Qiqi", "Keqing", "Xiao"]
+  },
+  "resistance": {
+    "name": "Resistance",
+    "schedule": ["Tuesday", "Friday"],
+    "location": "Forsaken Rift (Monstadt)",
+    "characters": ["Noelle", "Bennett", "Diluc", "Jean", "Mona", "Razor"]
+  },
+  "diligence": {
+    "name": "Diligence",
+    "schedule": ["Tuesday", "Friday"],
+    "location": "Taishan Mansion (Liyue)",
+    "characters": ["Xiangling", "Chongyun"]
+  },
+  "ballad": {
+    "name": "Ballad",
+    "schedule": ["Wednesday", "Saturday"],
+    "location": "Forsaken Rift (Monstadt)",
+    "characters": ["Fischl", "Kaeya", "Lisa", "Venti"]
+  },
+  "gold": {
+    "name": "Gold",
+    "schedule": ["Wednesday", "Saturday"],
+    "location": "Taishan Mansion (Liyue)",
+    "characters": ["Beidou", "Xingqiu"]
+  }
+}
