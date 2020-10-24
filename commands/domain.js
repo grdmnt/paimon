@@ -1,87 +1,73 @@
 const Discord = require("discord.js")
 
-const domainTypes = ["mastery", "forgery", "blessing"];
-const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-const characters = require('../data/characters.json');
-const talentMaterials = require('../data/talent_materials.json');
+const daysOfTheWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+const talentDomainMats = require('../data/domain_talent_materials.json');
+const weaponDomainMats = require('../data/domain_weapon_materials.json');
 
 module.exports = {
   name: "domain",
-  description: "Returns information about domain of forgery, mastery, and blessing.",
+  description: "Returns the schedule of the domain materials based on input day.",
   execute(message, args){
-    if(args.length === 0 || !domainTypes.includes(args[0].toLowerCase())) return;
+    if(args.length === 1 && args[0] != "today" && !daysOfTheWeek.includes(args[0].toLowerCase())) return;
 
-    if(args[0].toLowerCase() === domainTypes[0]){
-      if(args.length == 1){
-        listAllTalentMaterials(message);
-      } else if(args.length > 1 && args[1].toLowerCase() in talentMaterials){
-        listTalentMaterialByName(message, args[1].toLowerCase());
-      } else if(args.length > 1 && args[1].toLowerCase() in characters){
-        listTalentMaterialByCharacter(message, args[1].toLowerCase());
-      } else if(args.length > 1 && days.includes(args[1].toLowerCase())){
-        listTalentMaterialByDay(message, args[1].toLowerCase());
-      }
-    } else if(args[0].toLowerCase() === domainTypes[1]){
-      console.info("weapon to follow");
-    } else {
-      console.info("Artifact to follow");
+    if(args.length === 0 || (args.length === 1 && args[0].toLowerCase() === "today")){
+      var d = new Date();
+      var currentDay = daysOfTheWeek[d.getDay()];
+      listSchedule(message, currentDay);
+    } else if(args.length === 1 && daysOfTheWeek.includes(args[0].toLowerCase())){
+      listSchedule(message, args[0].toLowerCase());
     }
   }
 }
 
-function generateEmbeddedMessage(filteredTalentMaterials){
+function createTalentScheduleMessage(filteredTalentMats, day){
   var embed = new Discord.MessageEmbed()
-                           .setColor(3447003)
-                           .setTitle("Talent Materials");
-
-  for(var key in filteredTalentMaterials){
+                         .setColor(3447003)
+                         .setTitle(`DOMAIN TALENT MATERIALS - ${day.toUpperCase()} SCHEDULE`);
+  
+  for(var key in filteredTalentMats){
     embed.addFields(
       {
-        name: `${talentMaterials[key].name} | (${talentMaterials[key].schedule.join(', ')}) | ${talentMaterials[key].location}`,
-        value: talentMaterials[key].characters.join(', ')
-      }      
+        name: `${talentDomainMats[key].name} | (${talentDomainMats[key].schedule.join(', ')}) | ${talentDomainMats[key].location}`,
+        value: talentDomainMats[key].characters.join(', ')
+      }
     )
   }
   return embed;
 }
 
-function listAllTalentMaterials(message){
-  message.channel.send(generateEmbeddedMessage(talentMaterials));
-}
+function createWeaponScheduleMessage(filteredWeaponMats, day){
+  var embed = new Discord.MessageEmbed()
+                         .setColor(3453003)
+                         .setTitle(`DOMAIN WEAPON MATERIALS - ${day.toUpperCase()} SCHEDULE`);
 
-function listTalentMaterialByName(message, materialName){
-  var filtered = {}
-  Object.entries(talentMaterials)
-        .filter(([k,v]) => v.name.toLowerCase() === materialName)
-        .map(([k,v]) => Object.assign(filtered, {[k]:v}));
-  
-  message.channel.send(generateEmbeddedMessage(filtered));
-}
-
-function listTalentMaterialByCharacter(message, characterName){
-  var filtered = {}
-  Object.entries(talentMaterials)
-        .filter(([k,v]) => v.characters
-                            .map(c => { return c.toLowerCase()})
-                            .includes(characterName))
-        .map(([k,v]) => Object.assign(filtered, {[k]:v}));
-
-  message.channel.send(generateEmbeddedMessage(filtered));
-}
-
-function listTalentMaterialByDay(message, day){
-  
-  if(day === "sunday"){
-    listAllTalentMaterials(message);
+  for(var key in filteredWeaponMats){
+    embed.addFields(
+      {
+        name: `${weaponDomainMats[key].name} | (${weaponDomainMats[key].schedule.join(', ')}) | ${weaponDomainMats[key].location}`,
+        value: `[View Related Weapons](${weaponDomainMats[key].wiki})`
+      }
+    )
   }
-  else{
-    var filtered = {}
-    Object.entries(talentMaterials)
-          .filter(([k,v]) => v.schedule
-                              .map(d => { return d.toLowerCase()})
-                              .includes(day))
-          .map(([k,v]) => Object.assign(filtered, {[k]:v}));
-  
-    message.channel.send(generateEmbeddedMessage(filtered));
-  }
+  return embed;
+}
+
+function listSchedule(message, queriedDay){
+  var filteredTalentMats = {}
+  var filteredWeaponMats = {}
+
+  Object.entries(talentDomainMats)
+        .filter(([k,v]) => v.schedule
+                            .map(day => { return day.toLowerCase()})
+                            .includes(queriedDay))
+        .map(([k,v]) => Object.assign(filteredTalentMats, {[k]:v}));
+  message.channel.send(createTalentScheduleMessage(filteredTalentMats, queriedDay));
+
+  Object.entries(weaponDomainMats)
+        .filter(([k,v]) => v.schedule
+                            .map(day => { return day.toLowerCase()})
+                            .includes(queriedDay))
+        .map(([k,v]) => Object.assign(filteredWeaponMats, {[k]:v}));
+
+  message.channel.send(createWeaponScheduleMessage(filteredWeaponMats, queriedDay));
 }
