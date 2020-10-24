@@ -1,8 +1,4 @@
-const { execute } = require("./domain");
-
-function capitalize(string){
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
+const util = require('../utils/utils.js');
 
 module.exports = {
   name: "wiki",
@@ -11,9 +7,9 @@ module.exports = {
     if(args.length === 0){
       message.channel.send("https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki");
     } else if(args.length === 1){
-      message.channel.send(`https://genshin-impact.fandom.com/wiki/${capitalize(args[0].toLowerCase())}`);
+      message.channel.send(`https://genshin-impact.fandom.com/wiki/${util.capitalize(args[0].toLowerCase())}`);
     } else {
-      message.channel.send(`https://genshin-impact.fandom.com/wiki/${args.map(string => (capitalize(string))).join("_")}`);
+      message.channel.send(`https://genshin-impact.fandom.com/wiki/${args.map(string => (util.capitalize(string))).join("_")}`);
     }
   }
 }
