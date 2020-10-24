@@ -8,16 +8,28 @@ module.exports = {
   name: "domain",
   description: "Returns the schedule of the domain materials based on input day.",
   execute(message, args){
-    if(args.length === 1 && args[0] != "today" && !daysOfTheWeek.includes(args[0].toLowerCase())) return;
-
     if(args.length === 0 || (args.length === 1 && args[0].toLowerCase() === "today")){
       var d = new Date();
       var currentDay = daysOfTheWeek[d.getDay()];
       listSchedule(message, currentDay);
     } else if(args.length === 1 && daysOfTheWeek.includes(args[0].toLowerCase())){
       listSchedule(message, args[0].toLowerCase());
+    } else {
+      sendHelpMessage(message);
     }
   }
+}
+
+function sendHelpMessage(message){
+  var embed = new Discord.MessageEmbed()
+                         .setColor("#FF0000")
+  embed.addFields(
+    {
+      name: "Command Usage: ",
+      value: "?domain [day_of_the_week]\n\n Bot will return current day's domain schedules if given argument is `today` or if no arguments were given. The `day_of_the_week` should be written in full."
+    }
+  )
+  message.channel.send(embed);
 }
 
 function createTalentScheduleMessage(filteredTalentMats, day){
