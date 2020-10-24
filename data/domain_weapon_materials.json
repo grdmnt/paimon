@@ -1,0 +1,44 @@
+{
+  "decarabian": {
+    "name": "Decarabian",
+    "schedule": ["Monday", "Thursday", "Sunday"],
+    "location": "Cecilia Garden (Monstadt)",
+    "weapons": ["Aquila Favonia", "Cool Steel", "Favonius Sword", "Ferrous Shadow", "Raven Bow", "The Stringless", "The Viridescent Hunt", "The Bell", "Favonius Codex", "Magic Guide", "Royal Grimoire"],
+    "wiki": "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower"
+  },
+  "guyun": {
+    "name": "Guyun",
+    "schedule": ["Monday", "Thursday", "Sunday"],
+    "location": "Hidden Palace of Lianshan Formula (Liyue)",
+    "weapons": ["Dark Iron Sword", "Lion's Roar", "Blackcliff Warbow", "Rust", "Slingshot", "Emerald Orb", "Solar Pearl", "Crescent Pike", "Primordial Jade Winged-Spear", "White Tassel", "Whiteblind"],
+    "wiki": "https://genshin-impact.fandom.com/wiki/Luminous_Sands_from_Guyun"
+  },
+  "boreal_wolf": {
+    "name": "Boreal Wolf",
+    "schedule": ["Tuesday", "Friday", "Sunday"],
+    "location": "Cecilia Garden (Monstadt)",
+    "weapons": ["Harbringer of Dawn", "Skyward Blade", "Sword of Descension", "The Black Sword", "The Flute", "Alley Hunter", "Sacrificial Bow", "Sharpshooter's Oath", "Skyward Harp", "Bloodtainted Greatsword", "Sacrificial Greatsword", "Skyward Pride", "Skyward Atlas", "The Widsith", "Thrilling Tales of Dragon Slayers", "Wine and Song", "Deathmatch"],
+    "wiki": "https://genshin-impact.fandom.com/wiki/Boreal_Wolf%27s_Milk_Tooth"
+  },
+  "mist_veiled": {
+    "name": "Mist Veiled",
+    "schedule": ["Tuesday", "Friday", "Sunday"],
+    "location": "Hidden Palace of Lianshan Formula (Liyue)",
+    "weapons": ["Fillet Blade", "Prototype Rancour", "Messenger", "Prototype Crescent", "Debate Club", "Rainslasher", "Eye of Perception", "Prototype Malice", "Twin Nephrite", "Dragon's Bane", "Halberd"],
+    "wiki": "https://genshin-impact.fandom.com/wiki/Mist_Veiled_Lead_Elixir"
+  },
+  "dandelion": {
+    "name": "Dandelion",
+    "schedule": ["Wednesday", "Saturday", "Sunday"],
+    "location": "Cecilia Garden (Monstadt)",
+    "weapons": ["Sacrificial Sword", "Traveler's Handy Sword", "Amos' Bow", "Favonius Warbow", "Recurve Bow", "Favonius Greatsword", "Royal Greatsword", "White Iron Greatsword", "Wolf's Gravestone", "Lost Prayer to the Sacred Winds", "Otherwordly Story", "Sacrificial Fragments", "Beginner's Protector", "Favonius Lance", "Skyward Spine"],
+    "wiki": "https://genshin-impact.fandom.com/wiki/Fetters_of_the_Dandelion_Gladiator"
+  },
+  "aerosiderite": {
+    "name": "Aerosiderite",
+    "schedule": ["Wednesday", "Saturday", "Sunday"],
+    "location": "Hidden Palace of Lianshan Formula (Liyue)",
+    "weapons": ["Iron Sting", "Skyrider Sword", "Compound Bow", "Prototype Aminus", "Serpent Spine", "Skyrider Greatsword", "Mappa Mare", "Black Tassel", "Prototype Grudge"],
+    "wiki": "https://genshin-impact.fandom.com/wiki/Grain_of_Aerosiderite"
+  } 
+}
