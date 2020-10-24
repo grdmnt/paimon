@@ -1,5 +1,6 @@
 require('dotenv').config();
 const Discord = require('discord.js');
+const config = require('./config.json');
 const bot = new Discord.Client();
 const fs = require('fs');
 const TOKEN = process.env.TOKEN;
@@ -16,9 +17,8 @@ bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}!`);
 });
 
-const prefix = "!";
-
 bot.on("message", message => {
+  let prefix = config.prefix;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).split(/ +/);
