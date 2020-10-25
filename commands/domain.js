@@ -3,6 +3,7 @@ const Discord = require("discord.js")
 const daysOfTheWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 const talentDomainMats = require('../data/domain_talent_materials.json');
 const weaponDomainMats = require('../data/domain_weapon_materials.json');
+const domainSchedules = require('../data/domain_schedule.json');
 
 module.exports = {
   name: "domain",
@@ -11,9 +12,15 @@ module.exports = {
     if(args.length === 0 || (args.length === 1 && args[0].toLowerCase() === "today")){
       var d = new Date();
       var currentDay = daysOfTheWeek[d.getDay()];
-      listSchedule(message, currentDay);
+      message.channel.send(domainSchedules[currentDay].summary);
+      //listSchedule(message, currentDay);
+    } else if(args.length === 1 && args[0].toLowerCase() === "tomorrow"){
+      var d = new Date();
+      var tomorrow = daysOfTheWeek[d.getDay() + 1];
+      message.channel.send(domainSchedules[tomorrow].summary);
     } else if(args.length === 1 && daysOfTheWeek.includes(args[0].toLowerCase())){
-      listSchedule(message, args[0].toLowerCase());
+      message.channel.send(domainSchedules[args[0].toLowerCase()].summary);
+      //listSchedule(message, args[0].toLowerCase());
     } else {
       sendHelpMessage(message);
     }
