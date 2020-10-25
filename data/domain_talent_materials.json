@@ -3,7 +3,7 @@
   "name": "Freedom",
   "schedule": ["Monday", "Thursday", "Sunday"],
   "location": "Forsaken Rift (Monstadt)",
-  "characters": ["Amber", "Sucrose", "Barbara", "Klee"]
+  "characters": ["Amber", "Sucrose", "Barbara", "Klee", "Childe", "Diona"]
   },
   "prosperity": {
     "name": "Prosperity",
@@ -33,6 +33,6 @@
     "name": "Gold",
     "schedule": ["Wednesday", "Saturday", "Sunday"],
     "location": "Taishan Mansion (Liyue)",
-    "characters": ["Beidou", "Xingqiu"]
+    "characters": ["Beidou", "Xingqiu", "Xinyan", "Zhongli"]
   }
 }
