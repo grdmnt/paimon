@@ -137,11 +137,11 @@
     "weaponType": "Claymore",
     "materials": "https://i.imgur.com/uiK2syr.jpg"
   },
-  "childe": {
-    "name": "Childe",
+  "tartaglia": {
+    "name": "Tartaglia",
     "element": "Hydro",
     "weaponType": "Bow",
-    "materials": "https://i.imgur.com/BBmnJfp.jpg"
+    "materials": "https://i.imgur.com/12xarDw.jpg"
   },
   "zhongli": {
     "name": "Zhongli",
@@ -153,6 +153,6 @@
     "name": "Diona",
     "element": "Cryo",
     "weaponType": "Bow",
-    "materials": "https://i.imgur.com/stJbi7u.jpg"
+    "materials": "https://i.imgur.com/sOK29K9.jpg"
   }
 }
