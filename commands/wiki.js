@@ -1,13 +1,84 @@
 function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
+  let word_exceptions = [
+    "a",
+    "an",
+    "the",
+    "aboard",
+    "about",
+    "above",
+    "across",
+    "after",
+    "against",
+    "along",
+    "amid",
+    "among",
+    "anti",
+    "around",
+    "as",
+    "at",
+    "before",
+    "behind",
+    "below",
+    "beneath",
+    "beside",
+    "besides",
+    "between",
+    "beyond",
+    "but",
+    "by",
+    "concerning",
+    "considering",
+    "despite",
+    "down",
+    "during",
+    "except",
+    "excepting",
+    "excluding",
+    "following",
+    "for",
+    "from",
+    "in",
+    "inside",
+    "into",
+    "like",
+    "minus",
+    "near",
+    "of",
+    "off",
+    "on",
+    "onto",
+    "opposite",
+    "outside",
+    "over",
+    "past",
+    "per",
+    "plus",
+    "regarding",
+    "round",
+    "save",
+    "since",
+    "than",
+    "through",
+    "to",
+    "toward",
+    "towards",
+    "under",
+    "underneath",
+    "unlike",
+    "until",
+    "up",
+    "upon",
+    "versus",
+    "via",
+    "with",
+    "within",
+    "without",
+  ];
 
-let exceptions = new Map();
-exceptions.set(
-  "Lost_Prayer_To_The_Sacred_Winds",
-  "Lost_Prayer_to_the_Sacred_Winds"
-);
-exceptions.set("Lost_Prayer", "Lost_Prayer_to_the_Sacred_Winds");
+  return word_exceptions.includes(string)
+    ? string
+    : string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 module.exports = {
   name: "wiki",
@@ -25,11 +96,6 @@ module.exports = {
       );
     } else {
       let cap = args.map((string) => capitalize(string)).join("_");
-
-      if (exceptions.has(cap)) {
-        cap = exceptions.get(cap);
-      }
-
       message.channel.send(`https://genshin-impact.fandom.com/wiki/${cap}`);
     }
   },
