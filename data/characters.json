@@ -155,10 +155,34 @@
     "weaponType": "Sword",
     "materials": "https://i.imgur.com/Z1ajw9K.png"
   },
+  "ganyu": {
+    "name": "Ganyu",
+    "element": "Cryo",
+    "weaponType": "Bow",
+    "materials": "https://i.imgur.com/vq4sFuF.png"
+  },
+  "rosaria": {
+    "name": "Rosaria",
+    "element": "Cryo",
+    "weaponType": "Polearm",
+    "materials": "https://i.imgur.com/ioyFw9J.png"
+  },
   "xiao": {
     "name": "Xiao",
     "element": "Anemo",
     "weaponType": "Polearm",
-    "materials": "https://i.imgur.com/nqNZs2h.jpg"
+    "materials": "https://i.imgur.com/x04p6mc.png"
+  },
+  "hutao": {
+    "name": "Hu Tao",
+    "element": "Pyro",
+    "weaponType": "Polearm",
+    "materials": "https://i.imgur.com/JCKjyrL.png"
+  },
+  "ayaka": {
+    "name": "Ayaka",
+    "element": "Cryo",
+    "weaponType": "Sword",
+    "materials": "https://i.imgur.com/vPvD8Y3.png"
   }
 }
