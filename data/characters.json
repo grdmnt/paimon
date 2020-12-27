@@ -3,156 +3,162 @@
     "name": "Amber",
     "element": "Pyro",
     "weaponType": "Bow",
-    "materials": "https://i.imgur.com/YlT78zM.jpg"
+    "materials": "https://i.imgur.com/yx1fivj.png"
   },
   "barbara": {
     "name": "Barbara",
     "element": "Hydro",
     "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/k3cwW5t.jpg"
+    "materials": "https://i.imgur.com/Ss0UxNU.png"
   },
   "sucrose": {
     "name": "Sucrose",
     "element": "Anemo",
     "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/aQCaKeu.jpg"
+    "materials": "https://i.imgur.com/HnfBcDJ.png"
   },
   "klee": {
     "name": "Klee",
     "element": "Pyro",
     "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/7DSrpN5.jpg"
+    "materials": "https://i.imgur.com/ZrgetCd.png"
   },
   "ningguang": {
     "name": "Ningguang",
     "element": "Geo",
     "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/Mvu6qqM.jpg"
+    "materials": "https://i.imgur.com/GjOPtvp.png"
   },
   "qiqi": {
     "name": "Qiqi",
     "element": "Cryo",
     "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/eJDVtyf.jpg"
+    "materials": "https://i.imgur.com/IRDAh8z.png"
   },
   "keqing": {
     "name": "Keqing",
     "element": "Electro",
     "weaponType": "Sword",
-    "materials": "https://i.imgur.com/MYuRtKI.jpg"
+    "materials": "https://i.imgur.com/rYt908s.png"
+  },
+  "noelle": {
+    "name": "Noelle",
+    "element": "Geo",
+    "weaponType": "Claymore",
+    "materials": "https://i.imgur.com/LS3QAru.png"
+  },
+  "bennett": {
+    "name": "Bennett",
+    "element": "Pyro",
+    "weaponType": "Sword",
+    "materials": "https://i.imgur.com/99shbPN.png"
+  },
+  "diluc": {
+    "name": "Diluc",
+    "element": "Pyro",
+    "weaponType": "Claymore",
+    "materials": "https://i.imgur.com/rkMF0Ez.png"
+  },
+  "jean": {
+    "name": "Jean",
+    "element": "Anemo",
+    "weaponType": "Sword",
+    "materials": "https://i.imgur.com/L9IXugy.png"
+  },
+  "mona": {
+    "name": "Mona",
+    "element": "Hydro",
+    "weaponType": "Catalyst",
+    "materials": "https://i.imgur.com/Ig569J9.png"
+  },
+  "razor": {
+    "name": "Razor",
+    "element": "Electro",
+    "weaponType": "Claymore",
+    "materials": "https://i.imgur.com/zQrJMd4.png"
+  },
+  "xiangling": {
+    "name": "Xiangling",
+    "element": "Pyro",
+    "weaponType": "Polearm",
+    "materials": "https://i.imgur.com/0xqaoMD.png"
+  },
+  "chongyun": {
+    "name": "Chongyun",
+    "element": "Cryo",
+    "weaponType": "Claymore",
+    "materials": "https://i.imgur.com/Dce37kL.png"
+  },
+  "lisa": {
+    "name": "Lisa",
+    "element": "Electro",
+    "weaponType": "Catalyst",
+    "materials": "https://i.imgur.com/KETFuqS.png"
+  },
+  "kaeya": {
+    "name": "Kaeya",
+    "element": "Cryo",
+    "weaponType": "Sword",
+    "materials": "https://i.imgur.com/PIfF68h.png"
+  },
+  "fischl": {
+    "name": "Fischl",
+    "element": "Electro",
+    "weaponType": "Bow",
+    "materials": "https://i.imgur.com/70XaQBA.png"
+  },
+  "venti": {
+    "name": "Venti",
+    "element": "Anemo",
+    "weaponType": "Bow",
+    "materials": "https://i.imgur.com/ffI6fwh.png"
+  },
+  "beidou": {
+    "name": "Beidou",
+    "element": "Electro",
+    "weaponType": "Claymore",
+    "materials": "https://i.imgur.com/f5rjiV0.png"
+  },
+  "xingqiu": {
+    "name": "Xingqiu",
+    "element": "Hydro",
+    "weaponType": "Sword",
+    "materials": "https://i.imgur.com/WWmBmvl.png"
+  },
+  "xinyan": {
+    "name": "Xinyan",
+    "element": "Pyro",
+    "weaponType": "Claymore",
+    "materials": "https://i.imgur.com/ArxBJpT.png"
+  },
+  "tartaglia": {
+    "name": "Tartaglia",
+    "element": "Hydro",
+    "weaponType": "Bow",
+    "materials": "https://i.imgur.com/5Mici84.png"
+  },
+  "zhongli": {
+    "name": "Zhongli",
+    "element": "Geo",
+    "weaponType": "Polearm",
+    "materials": "https://i.imgur.com/bFXqRYd.png"
+  },
+  "diona": {
+    "name": "Diona",
+    "element": "Cryo",
+    "weaponType": "Bow",
+    "materials": "https://i.imgur.com/EvtMURw.png"
+  },
+  "albedo": {
+    "name": "Albedo",
+    "element": "Geo",
+    "weaponType": "Sword",
+    "materials": "https://i.imgur.com/Z1ajw9K.png"
   },
   "xiao": {
     "name": "Xiao",
     "element": "Anemo",
     "weaponType": "Polearm",
     "materials": "https://i.imgur.com/nqNZs2h.jpg"
-  },
-  "noelle": {
-    "name": "Noelle",
-    "element": "Geo",
-    "weaponType": "Claymore",
-    "materials": "https://i.imgur.com/8mV9R8a.jpg"
-  },
-  "bennett": {
-    "name": "Bennett",
-    "element": "Pyro",
-    "weaponType": "Sword",
-    "materials": "https://i.imgur.com/mLlK2G0.jpg"
-  },
-  "diluc": {
-    "name": "Diluc",
-    "element": "Pyro",
-    "weaponType": "Claymore",
-    "materials": "https://i.imgur.com/yL5GZSx.jpg"
-  },
-  "jean": {
-    "name": "Jean",
-    "element": "Anemo",
-    "weaponType": "Sword",
-    "materials": "https://i.imgur.com/5Ap0dmA.jpg"
-  },
-  "mona": {
-    "name": "Mona",
-    "element": "Hydro",
-    "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/AMWoxaW.jpg"
-  },
-  "razor": {
-    "name": "Razor",
-    "element": "Electro",
-    "weaponType": "Claymore",
-    "materials": "https://i.imgur.com/DSzvtgi.jpg"
-  },
-  "xiangling": {
-    "name": "Xiangling",
-    "element": "Pyro",
-    "weaponType": "Polearm",
-    "materials": "https://i.imgur.com/PPaJisI.jpg"
-  },
-  "chongyun": {
-    "name": "Chongyun",
-    "element": "Cryo",
-    "weaponType": "Claymore",
-    "materials": "https://i.imgur.com/badLybw.jpg"
-  },
-  "lisa": {
-    "name": "Lisa",
-    "element": "Electro",
-    "weaponType": "Catalyst",
-    "materials": "https://i.imgur.com/hfc5lWg.jpg"
-  },
-  "kaeya": {
-    "name": "Kaeya",
-    "element": "Cryo",
-    "weaponType": "Sword",
-    "materials": "https://i.imgur.com/9aEGaSW.jpg"
-  },
-  "fischl": {
-    "name": "Fischl",
-    "element": "Electro",
-    "weaponType": "Bow",
-    "materials": "https://i.imgur.com/qN2MPtE.jpg"
-  },
-  "venti": {
-    "name": "Venti",
-    "element": "Anemo",
-    "weaponType": "Bow",
-    "materials": "https://i.imgur.com/o18dC79.jpg"
-  },
-  "beidou": {
-    "name": "Beidou",
-    "element": "Electro",
-    "weaponType": "Claymore",
-    "materials": "https://i.imgur.com/MZIXPuc.jpg"
-  },
-  "xingqiu": {
-    "name": "Xingqiu",
-    "element": "Hydro",
-    "weaponType": "Sword",
-    "materials": "https://i.imgur.com/mDy82LL.jpg"
-  },
-  "xinyan": {
-    "name": "Xinyan",
-    "element": "Pyro",
-    "weaponType": "Claymore",
-    "materials": "https://i.imgur.com/uiK2syr.jpg"
-  },
-  "tartaglia": {
-    "name": "Tartaglia",
-    "element": "Hydro",
-    "weaponType": "Bow",
-    "materials": "https://i.imgur.com/12xarDw.jpg"
-  },
-  "zhongli": {
-    "name": "Zhongli",
-    "element": "Geo",
-    "weaponType": "Polearm",
-    "materials": "https://i.imgur.com/PaBdRVn.jpg"
-  },
-  "diona": {
-    "name": "Diona",
-    "element": "Cryo",
-    "weaponType": "Bow",
-    "materials": "https://i.imgur.com/sOK29K9.jpg"
   }
 }
