@@ -17,4 +17,5 @@ TOKEN = "<INSERT YOUR TOKEN HERE>"
 ```
 
 5. Add your own bot to a discord server (you can make a dev server for testing your bots).
-6. Run `node index.js` then check if the bot will go online in discord.
+6. Run `npm install` to install node packages.
+7. Run `node index.js` then check if the bot will go online in discord.
