@@ -20,18 +20,18 @@ module.exports = {
       execute(message, _) {
         let images = ["https://media1.tenor.com/images/373c80cfb4498d2b043572ef58ceb516/tenor.gif", "https://i.imgur.com/1EON1kN.png"];
         const image = images[getRandomInt(images.length)];
-        const broke = new Discord.MessageEmbed().setImage(image);
-        message.channel.send(broke);
+        const embeddedMessage = new Discord.MessageEmbed().setImage(image);
+        message.channel.send(embeddedMessage);
       },
     },
     {
       name: "ganyu",
       description: "A bunch of meme commands",
       execute(message, _) {
-        const broke = new Discord.MessageEmbed()
+        const embeddedMessage = new Discord.MessageEmbed()
           .setImage("https://i.imgur.com/f5bMIO8.png")
           .setTitle("Come home");
-        message.channel.send(broke);
+        message.channel.send(embeddedMessage);
       },
     },
   ],
