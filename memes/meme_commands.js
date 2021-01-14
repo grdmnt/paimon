@@ -45,12 +45,27 @@ module.exports = {
           let images = [
             "https://i.imgur.com/f5bMIO8.png",
             "https://i.imgur.com/TEVaf9f.png",
+            "https://i.imgur.com/ovUIAw7.jpg",
           ];
           image = images[getRandomInt(images.length)];
           embeddedMessage = new Discord.MessageEmbed()
             .setImage(image)
             .setTitle("Come home");
         }
+        message.channel.send(embeddedMessage);
+      },
+    },
+    {
+      name: "ayaka",
+      description: "A bunch of meme commands",
+      execute(message, _) {
+        let images = [
+          "https://pbs.twimg.com/media/ENKta_uXYAEO_RY?format=jpg&name=4096x4096",
+        ];
+        const image = images[getRandomInt(images.length)];
+        const embeddedMessage = new Discord.MessageEmbed()
+          .setImage(image)
+          .setTitle("Come home");
         message.channel.send(embeddedMessage);
       },
     },
