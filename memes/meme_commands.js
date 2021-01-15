@@ -35,7 +35,11 @@ module.exports = {
         let embeddedMessage;
         let prob = getRandomInt(1000);
         //1.6% incl. pity 5* rates btw
-        if (prob < 16) {
+        if (
+          prob < 16 ||
+          message.author.username === "Matteo Rey" ||
+          message.author.username === "whooper"
+        ) {
           image =
             "https://media1.tenor.com/images/5405bb7f7415fe21cc5163f52a56f6f3/tenor.gif?itemid=19917573";
           embeddedMessage = new Discord.MessageEmbed()
