@@ -14,15 +14,6 @@ module.exports = {
         message.channel.send(messages[getRandomInt(messages.length)]);
       },
     },
-  commands: [
-    {
-      name: "razor",
-      description: "A bunch of meme commands",
-      execute(message, _) {
-        let messages = ["Yesssss"];
-        message.channel.send(messages[getRandomInt(messages.length)]);
-      },
-    },
     {
       name: "zhongli",
       description: "A bunch of meme commands",
