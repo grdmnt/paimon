@@ -54,6 +54,7 @@ module.exports = {
           let images = [
             "https://i.imgur.com/f5bMIO8.png",
             "https://i.imgur.com/TEVaf9f.png",
+            "https://i.redd.it/l2x7hzja4ab61.png",
           ];
           image = images[getRandomInt(images.length)];
           embeddedMessage = new Discord.MessageEmbed()
