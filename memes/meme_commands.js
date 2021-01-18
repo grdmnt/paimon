@@ -15,12 +15,21 @@ module.exports = {
       },
     },
     {
+      name: "razor",
+      description: "A bunch of meme commands",
+      execute(message, _) {
+        let messages = ["Yesssss"];
+        message.channel.send(messages[getRandomInt(messages.length)]);
+      },
+    },
+    {
       name: "zhongli",
       description: "A bunch of meme commands",
       execute(message, _) {
         let images = [
           "https://media1.tenor.com/images/373c80cfb4498d2b043572ef58ceb516/tenor.gif",
           "https://i.imgur.com/1EON1kN.png",
+          "https://i.kym-cdn.com/photos/images/original/001/925/503/5c2.jpg",
         ];
         const image = images[getRandomInt(images.length)];
         const embeddedMessage = new Discord.MessageEmbed().setImage(image);
@@ -45,6 +54,7 @@ module.exports = {
           let images = [
             "https://i.imgur.com/f5bMIO8.png",
             "https://i.imgur.com/TEVaf9f.png",
+            "https://i.redd.it/l2x7hzja4ab61.png",
           ];
           image = images[getRandomInt(images.length)];
           embeddedMessage = new Discord.MessageEmbed()
