@@ -46,7 +46,7 @@ module.exports = {
           ["https://i.imgur.com/TEVaf9f.png", "Come home", 24.2],
           ["https://i.redd.it/l2x7hzja4ab61.png", "Come home", 50],
           [
-            "https://media1.tenor.com/images/5405bb7f7415fe21cc5163f52a56f6f3/tenor.gif?itemid=19917573",
+            "https://media1.tenor.com/images/5405bb7f7415fe21cc5163f52a56f6f3/tenor.gif",
             "Already home",
             1.6,
           ],
