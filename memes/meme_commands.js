@@ -80,7 +80,7 @@ module.exports = {
       name: "hu",
       description: "A bunch of meme commands",
       execute(message, _) {
-        let images = ["https://i.imgur.com/8sOXZs4.png"];
+        let images = ["https://i.imgur.com/8sOXZs4.png", "https://imgur.com/HuCegNK.png"];
         const image = images[getRandomInt(images.length)];
         const embeddedMessage = new Discord.MessageEmbed()
           .setImage(image)
@@ -92,7 +92,7 @@ module.exports = {
       name: "tao",
       description: "A bunch of meme commands",
       execute(message, _) {
-        let images = ["https://i.imgur.com/8sOXZs4.png"];
+        let images = ["https://i.imgur.com/8sOXZs4.png", "https://imgur.com/HuCegNK.png"];
         const image = images[getRandomInt(images.length)];
         const embeddedMessage = new Discord.MessageEmbed()
           .setImage(image)
@@ -104,7 +104,7 @@ module.exports = {
       name: "who",
       description: "A bunch of meme commands",
       execute(message, _) {
-        let images = ["https://i.imgur.com/8sOXZs4.png"];
+        let images = ["https://i.imgur.com/8sOXZs4.png", "https://imgur.com/HuCegNK.png"];
         const image = images[getRandomInt(images.length)];
         const embeddedMessage = new Discord.MessageEmbed()
           .setImage(image)
