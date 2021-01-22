@@ -76,6 +76,42 @@ module.exports = {
         message.channel.send(embeddedMessage);
       },
     },
+    {
+      name: "hu",
+      description: "A bunch of meme commands",
+      execute(message, _) {
+        let images = ["https://i.imgur.com/8sOXZs4.png"];
+        const image = images[getRandomInt(images.length)];
+        const embeddedMessage = new Discord.MessageEmbed()
+          .setImage(image)
+          .setTitle("Who tao?");
+        message.channel.send(embeddedMessage);
+      },
+    },
+    {
+      name: "tao",
+      description: "A bunch of meme commands",
+      execute(message, _) {
+        let images = ["https://i.imgur.com/8sOXZs4.png"];
+        const image = images[getRandomInt(images.length)];
+        const embeddedMessage = new Discord.MessageEmbed()
+          .setImage(image)
+          .setTitle("Who tao?");
+        message.channel.send(embeddedMessage);
+      },
+    },
+    {
+      name: "who",
+      description: "A bunch of meme commands",
+      execute(message, _) {
+        let images = ["https://i.imgur.com/8sOXZs4.png"];
+        const image = images[getRandomInt(images.length)];
+        const embeddedMessage = new Discord.MessageEmbed()
+          .setImage(image)
+          .setTitle("Who tao?");
+        message.channel.send(embeddedMessage);
+      },
+    },
   ],
 };
 
