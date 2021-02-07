@@ -129,7 +129,7 @@ module.exports = {
       description: "A bunch of meme commands",
       execute(message, _) {
         let images = [
-          "https://imgur.com/a/F5eTFuL",
+          "https://imgur.com/a/F5eTFuL.png",
         ];
         const image = images[getRandomInt(images.length)];
         const embeddedMessage = new Discord.MessageEmbed()
