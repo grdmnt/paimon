@@ -124,6 +124,20 @@ module.exports = {
         message.channel.send(embeddedMessage);
       },
     },
+    {
+      name: "xiao",
+      description: "A bunch of meme commands",
+      execute(message, _) {
+        let images = [
+          "https://imgur.com/a/F5eTFuL",
+        ];
+        const image = images[getRandomInt(images.length)];
+        const embeddedMessage = new Discord.MessageEmbed()
+          .setImage(image)
+          .setTitle("Xiaomachurl");
+        message.channel.send(embeddedMessage);
+      },
+    },
   ],
 };
 
